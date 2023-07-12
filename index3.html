@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+.foo{
+    border-left: 1px solid blue;
+}
+
+.foo.bar{
+    border-top: 1px solid red;
+}
+
+ .foo .bar{
+   border-right: 3px solid green;        
+   width:20px;
+   height:25px;
+   background-color:lightgray;    
+}
+
+ .foo:hover.foo .bar{
+    border-bottom: 3px solid orange;
+}
+.bar:hover{
+    border-right: 4px solid pink;
+}
+
+div{
+    margin:20px;
+    height:50px;
+    width:50px;
+    background-color:beige;
+}
+.foo.sol{
+    border-top: 3px solid red;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="foo bar">
+        <div class = "bar" style="border-right: 3px solid green;">
+        </div>
+    </div>
+    
+    <div class="foo">
+        </div>
+    <div class="foo sol">
+        </div>
+    </div>
+</body>
+</html>
